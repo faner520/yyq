@@ -26,11 +26,11 @@
 	<audio autoplay src="music/ftilyyq.mp3"/></audio>
 
 	<div id="bgmvideo"></div>
-	<script>
+	<script type="text/javascript">
         $(document).ready(function () {
             if (!sessionStorage.getItem("bgm")) {
                  $("#bgmvideo").append(
-                    '<audio autoplay src="music/ftilyyq.mp3"/></audio></audio>'
+                    '<audio src="music/ftilyyq.mp3 autoplay hidden"/></audio></audio>'
                 );
                 sessionStorage.setItem("bgm", 1)
             }
