@@ -27,14 +27,15 @@
 
 	<div id="bgmvideo"></div>
 	<script type="text/javascript">
-        $(document).ready(function () {
-            if (!sessionStorage.getItem("bgm")) {
-                 $("#bgmvideo").append(
-                    '<audio src="music/ftilyyq.mp3 autoplay hidden"/></audio></audio>'
-                );
-                sessionStorage.setItem("bgm", 1)
-            }
-        })</script>
+		$('html').one('touchstart',function(){ 
+		audio.play(); 
+		}
+		});
+
+		("body").one("touchstart",
+		audio.play(); 
+		});
+</script>
 	<!--==============================================================-->
 	<div id="main">
         <div id="error">
