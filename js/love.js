@@ -163,13 +163,13 @@
             ctx.scale(scale, scale);
             ctx.moveTo(0, 0);
     	    ctx.lineTo(15, 15);
-    	    ctx.lineTo(190, 15);
+    	    ctx.lineTo(78, 15);
             ctx.stroke();
 
             ctx.moveTo(0, 0);
             ctx.scale(0.75, 0.75);
-            ctx.font = "12px 微软雅黑,Verdana"; // 字号肿么没有用? (ˉ(∞)ˉ)
-            ctx.fillText("宝宝点击红色爱心会有惊喜哦ヾ(=･ω･=)o", 23, 10);
+            ctx.font = "11px 微软雅黑,Verdana"; // 字号肿么没有用? (ˉ(∞)ˉ)
+            ctx.fillText("点击爱心有惊喜", 23, 10);
             ctx.restore();
         },
         clear: function() {
